@@ -26,7 +26,7 @@ class Data extends Model
 		'description' => 'required',
     ];
 
-    protected $perPage = 20;
+    protected $perPage = 25;
 
     /**
      * Attributes that should be mass-assignable.
