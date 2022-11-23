@@ -155,7 +155,7 @@ return [
     */
 
     'providers' => [
-
+        'Collective\Html\HtmlServiceProvider',
         /*
          * Laravel Framework Service Providers...
          */
@@ -210,6 +210,8 @@ return [
 
     'aliases' => Facade::defaultAliases()->merge([
         // 'ExampleClass' => App\Example\ExampleClass::class,
+        'Form' => 'Collective\Html\FormFacade',
+        'Html' => 'Collective\Html\HtmlFacade',
     ])->toArray(),
 
 ];
