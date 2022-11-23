@@ -155,7 +155,7 @@ return [
     */
 
     'providers' => [
-        'Collective\Html\HtmlServiceProvider',
+        Collective\Html\HtmlServiceProvider::class,
         /*
          * Laravel Framework Service Providers...
          */
