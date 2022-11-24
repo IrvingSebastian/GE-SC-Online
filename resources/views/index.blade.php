@@ -63,7 +63,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						</button>
-						<a class="navbar-brand" href="#"></a>
+						<a class="navbar-brand" href="{{route('index')}}"></a>
 					</div>
 					<div id="mynav" class="navbar-collapse collapse">
 						<ul class="nav navbar-nav main-nav-list">
@@ -105,7 +105,7 @@
 				<div class="item"> <!-- Change Image -->
 					<div class="caption">
 						<h1 class="animated fadeInLeftBig">Grandes proyectos, <strong>Gran Calidad</strong></h1>
-						<p class="animated fadeInRightBig">Ready to Start</p>
+						<p class="animated fadeInRightBig">¿Listo para empezar?</p>
 						<a data-scroll class="learn-more animated fadeInUpBig" href="#about">Iniciar</a>
 					</div>
 				</div>
@@ -127,10 +127,9 @@
 				<div class="row">
 					<!-- Block Title -->
 					<div class="section-title wow fadeInUp" data-wow-duration="1s" data-wow-delay="300ms">			
-						<h1><span>Acerca De</span></h1>							
+						<h1><span>¿A qué nos dedicamos?</span></h1>							
 					</div>
 					<div class="element-title wow fadeInDown" data-wow-duration="1s" data-wow-delay="300ms">			
-						<h1>¿A qué nos dedicamos?</h1>
 						<h3>Somos una <span class="main-color">nueva empresa</span> que piensa en el <span class="main-color">Futuro</span></h3>
 					</div>
 					<!-- End Block Title -->
@@ -768,7 +767,7 @@
 						<div class="section-title wow fadeInDown" data-wow-duration="1s" data-wow-delay="300ms">			
 							<h1><span>Contáctanos</span></h1>							
 						</div>				
-						<h3 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="300ms">Envía tu <span class="main-color">comentario </span>para ser mostrado en la páginas</h3>	
+						<h3 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="300ms">Envía tu <span class="main-color">comentario </span>para ser mostrado en la página</h3>	
 					</div>
 				</div>
 			</div>
