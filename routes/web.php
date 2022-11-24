@@ -18,7 +18,5 @@ use App\Http\Controllers\DataController;
 Route::get('/', [HomeController::class, 'raiz'])->name('raiz');
 Route::get('/index', [HomeController::class, 'index'])->name('index');
 
-Auth::routes();
-
-Route::resource('data', DataController::class);
 Route::get('/home', [HomeController::class, 'home'])->name('home');
+Route::resource('data', DataController::class)->middleware('auth');
