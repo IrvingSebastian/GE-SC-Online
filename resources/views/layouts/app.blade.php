@@ -38,13 +38,16 @@
                             <a class="nav-link" href="{{ route('stadistics.index') }}">Datos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="">Equipo</a>
+                            <a class="nav-link" href="{{ route('personals.index') }}">Equipo</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="">Comentarios</a>
+                            <a class="nav-link" href="{{ route('works.index') }}">Trabajos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="">Acerca de</a>
+                            <a class="nav-link" href="{{ route('comentaries.index') }}">Comentarios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('infos.index') }}">Acerca de</a>
                         </li>
                     </ul>
                     @endauth
