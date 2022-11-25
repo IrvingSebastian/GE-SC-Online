@@ -36,8 +36,6 @@
                                     <tr>
                                         <th>No</th>
                                         
-										<th>Rank</th>
-										<th>Title</th>
 
                                         <th></th>
                                     </tr>
@@ -47,8 +45,6 @@
                                         <tr>
                                             <td>{{ ++$i }}</td>
                                             
-											<td>{{ $stadistic->rank }}</td>
-											<td>{{ $stadistic->title }}</td>
 
                                             <td>
                                                 <form action="{{ route('stadistics.destroy',$stadistic->id) }}" method="POST">

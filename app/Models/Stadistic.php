@@ -8,6 +8,8 @@ use Illuminate\Database\Eloquent\Model;
  * Class Stadistic
  *
  * @property $id
+ * @property $rank
+ * @property $title
  * @property $created_at
  * @property $updated_at
  *
@@ -18,6 +20,8 @@ class Stadistic extends Model
 {
     
     static $rules = [
+		'rank' => 'required',
+		'title' => 'required',
     ];
 
     protected $perPage = 20;
@@ -27,7 +31,7 @@ class Stadistic extends Model
      *
      * @var array
      */
-    protected $fillable = [];
+    protected $fillable = ['rank','title'];
 
 
 

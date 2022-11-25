@@ -35,7 +35,7 @@
                             <a class="nav-link" href="{{ route('data.index') }}">¿Qué Hacemos?</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="">Datos</a>
+                            <a class="nav-link" href="{{ route('stadistics.index') }}">Datos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="">Equipo</a>
@@ -56,6 +56,9 @@
                             @if (Route::has('login'))
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('login') }}">{{ __('Iniciar Sesión') }}</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Registrar') }}</a>
                                 </li>
                             @endif
                         @else

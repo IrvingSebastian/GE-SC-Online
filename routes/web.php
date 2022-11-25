@@ -25,5 +25,4 @@ Route::get('/home', [HomeController::class, 'home'])->name('home');
 
 Auth::routes();
 Route::resource('data', DataController::class)->middleware('auth');
-
 Route::resource('stadistics', StadisticController::class)->middleware('auth');

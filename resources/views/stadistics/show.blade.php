@@ -20,14 +20,6 @@
 
                     <div class="card-body">
                         
-                        <div class="form-group">
-                            <strong>Rank:</strong>
-                            {{ $stadistic->rank }}
-                        </div>
-                        <div class="form-group">
-                            <strong>Title:</strong>
-                            {{ $stadistic->title }}
-                        </div>
 
                     </div>
                 </div>
