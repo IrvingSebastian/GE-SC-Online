@@ -5,6 +5,9 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\DataController;
 use App\Http\Controllers\StadisticController;
 use App\Http\Controllers\PersonalController;
+use App\Http\Controllers\WorkController;
+use App\Http\Controllers\ComentaryController;
+use App\Http\Controllers\InfoController;
 use App\Http\Controllers\ViewsController;
 use Illuminate\Support\Facades\Auth;
 
@@ -28,3 +31,6 @@ Auth::routes();
 Route::resource('data', DataController::class)->middleware('auth');
 Route::resource('stadistics', StadisticController::class)->middleware('auth');
 Route::resource('personals', PersonalController::class)->middleware('auth');
+Route::resource('works', WorkController::class)->middleware('auth');
+Route::resource('comentaries', ComentaryController::class)->middleware('auth');
+Route::resource('infos', InfoController::class)->middleware('auth');
