@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('template_title')
-    Create Stadistic
+    Crear
 @endsection
 
 @section('content')
@@ -13,7 +13,7 @@
 
                 <div class="card card-default">
                     <div class="card-header">
-                        <span class="card-title">Create Stadistic</span>
+                        <span class="card-title">Crear</span>
                     </div>
                     <div class="card-body">
                         <form method="POST" action="{{ route('stadistics.store') }}"  role="form" enctype="multipart/form-data">

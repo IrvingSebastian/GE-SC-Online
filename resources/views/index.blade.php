@@ -69,7 +69,6 @@
 						<ul class="nav navbar-nav main-nav-list">
 							<li><a href="#home">Inicio</a></li>
 							<li><a href="#about">¿Que Hacemos?</a></li>
-							<li><a href="#team">Equipo</a></li>
 							<li><a href="#works">Trabajos</a></li>
 							<li><a href="#news">Acerca De</a></li>
 						</ul>
@@ -89,7 +88,7 @@
 				<div class="item active"> <!-- Change Image -->
 					<div class="caption">
 						<h1 class="animated fadeInLeftBig">Bienvenido a <strong>GE-SC ARQUITECTOS</strong></h1>
-						<p class="animated fadeInRightBig">Empresa dedicada a la arquitectura</p>
+						<p class="animated fadeInRightBig">Empresa dedicada al Diseño y Construcción</p>
 						<a data-scroll class="learn-more animated fadeInUpBig" href="#about">Iniciar</a>
 					</div>
 				</div>
@@ -102,7 +101,7 @@
 				</div>
 				<div class="item"> <!-- Change Image -->
 					<div class="caption">
-						<h1 class="animated fadeInLeftBig">Grandes proyectos, <strong>Gran Calidad</strong></h1>
+						<h1 class="animated fadeInLeftBig">Dedicados a elaborar <strong>proyectos Arquitectónicos</strong></h1>
 						<p class="animated fadeInRightBig">¿Listo para empezar?</p>
 						<a data-scroll class="learn-more animated fadeInUpBig" href="#about">Iniciar</a>
 					</div>
@@ -128,7 +127,7 @@
 						<h1><span>¿A qué nos dedicamos?</span></h1>							
 					</div>
 					<div class="element-title wow fadeInDown" data-wow-duration="1s" data-wow-delay="300ms">			
-						<h3>Somos una <span class="main-color">nueva empresa</span> que piensa en el <span class="main-color">Futuro</span></h3>
+						<h3>Somos una empresa <span class="main-color">joven </span> dedicada a la elaboración de <span class="main-color">proyectos Arquitectónicos</span></h3>
 					</div>
 					<!-- End Block Title -->
 					<!-- About Us Icons -->
@@ -182,60 +181,6 @@
 
 </section> 
 <!-- End About Section --> 
-
-<!-- Team Section --> 
-<section class="section-wrapper" id="team">
-	<div class="team">
-		<!-- Block Title -->
-		<div class="meet-the-team">			
-			<div class="element-title">			
-				<div class="row">	 		
-					<div class="container">	 
-					<div class="section-title wow fadeInDown" data-wow-duration="1s" data-wow-delay="300ms">			
-						<h1><span>Conoce al equipo</span></h1>								
-					</div>					
-						<h3 class=" wow fadeInUp" data-wow-duration="1s" data-wow-delay="300ms">Este es el <span class="main-color">Equipo</span>, Esta es nuestra <span class="main-color">Familia</span></h3>
-					</div>
-				</div>
-			</div>
-			<!-- End Block Title -->
-			<div class="row">
-				<div class="container">	
-					<div class="wrapper-team">	
-						@foreach ($personal as $personal)
-						<div class="col-lg-3 col-md-3">
-							<div class="team-member">
-								<div class="team-member-holder wow flipInY" data-wow-duration="1s" data-wow-delay="300ms">
-									<div class="team-member-image">
-										<img src="{{$personal->photo}}" alt="" /> <!-- Change Image -->	
-										<div class="team-overlay">
-											<div class="img-overlay"></div>
-										</div>
-									</div>
-									<div class="team-member-meta">
-										<h4 class="team-member-name"><span class="main-color">{{$personal->name}}</h4>
-										<div class="team-member-role">{{$personal->status}}</div>
-										<div class="team-member-role">{{$personal->email}}</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						@endforeach			
-	
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Profile Team -->
-		<div id="team-single-wrap">
-			<div id="team-single">
-			</div>
-		</div>
-		<!-- End Profile Team -->	
-	</div>
-</section> 
-<!-- End Team Section --> 
-
 
 <!-- Works Section --> 
 <section class="section-wrapper" id="works">
@@ -529,54 +474,6 @@
 						</div>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-lg-6 col-sm-6">	
-						<div class="news-content wow fadeInLeft" data-wow-duration="1s" data-wow-delay="600ms">	
-							<div class="entry-header">	
-								<div class="blog-image">
-									<a href="blog.html"><img alt="" src="images/blog/post3.jpg" class="img-responsive"></a>
-								</div>							
-								<div class="post-date">
-									<h2>28<span>June</span></h2>
-								</div>							
-							</div>
-							<div class="entry-content">	
-								<h3 class="entry-title">
-									<a href="blog.html">Adipisicing elit, sed do eiusmod tempor</a>
-								</h3>							
-								<ul class="entry-meta">
-								<li><a href="#"><i class="fa fa-user"></i> By: Admin <span>/</span></a></li>
-								<li><a href="#"><i class="fa fa-tags"></i> Projects <span>/</span></a></li>
-								<li><a href="#"><i class="fa fa-comments"></i> 3 Comments</a></li>
-								</ul>	
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>								
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-6 col-sm-6">	
-						<div class="news-content wow fadeInRight" data-wow-duration="1s" data-wow-delay="600ms">	
-							<div class="entry-header">	
-								<div class="blog-image">
-									<a href="blog.html"><img alt="" src="images/blog/post4.jpg" class="img-responsive"></a>
-								</div>							
-								<div class="post-date">
-									<h2>30<span>July</span></h2>
-								</div>							
-							</div>
-							<div class="entry-content">	
-								<h3 class="entry-title">
-									<a href="blog.html">Adipisicing elit, sed do eiusmod tempor</a>
-								</h3>							
-								<ul class="entry-meta">
-								<li><a href="#"><i class="fa fa-user"></i> By: Admin <span>/</span></a></li>
-								<li><a href="#"><i class="fa fa-tags"></i> Projects <span>/</span></a></li>
-								<li><a href="#"><i class="fa fa-comments"></i> 5 Comments</a></li>
-								</ul>	
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>								
-							</div>
-						</div>
-					</div>
-				</div>
 			</div>
 		</div>	
 	</div>
@@ -591,7 +488,7 @@
 						<div class="section-title wow fadeInDown" data-wow-duration="1s" data-wow-delay="300ms">			
 							<h1><span>Contáctanos</span></h1>							
 						</div>				
-						<h3 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="300ms">Envía tu <span class="main-color">mensaje </span>si estas interesado en algún proyecto.</h3>	
+						<h3 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="300ms">Envía un <span class="main-color">mensaje </span>si estas interesado en algún proyecto.</h3>	
 					</div>
 				</div>
 			</div>
@@ -605,17 +502,17 @@
 								<div class="wrapper-contacts-icons">	
 									<div class="col-xs-4 wow fadeInRight" data-wow-duration="1s" data-wow-delay="300ms">	
 										<i class="fa fa-map-marker"></i>
-										<div class="">Tecámac Cetro, Tecámac, Estado de México</div>
+										<div class="">Tecámac Centro, Tecámac, Estado de México</div>
 									</div>								
 									<div class="col-xs-4 wow fadeInRight" data-wow-duration="1s" data-wow-delay="450ms">	
 										<i class="fa fa-mobile-phone"></i>
 										<div class="">Lunes a Vienes 09:00am a 05:00pm / Sábado de 09:00am a 03:00pm</div>
-										<div class="">+1800 920 8845</div>
+										<div class="">+52 1 5581867547</div>
 									</div>
 									<div class="col-xs-4 wow fadeInRight" data-wow-duration="1s" data-wow-delay="600ms">	
 										<i class="fa fa-envelope-o"></i>
 										<div class="">Envianos un correo personal si lo deseas</div>
-										<div class="">info@mywebsite.com</div>
+										<div class="">grupoge-sc@outlook.com</div>
 									</div>								
 									
 								</div>								
@@ -638,9 +535,8 @@
 	<div class="container"> 
 		<div class="bottom-footer-center wow fadeInDown" data-wow-duration="1s" data-wow-delay="300ms">
 			<ul class="bottom-social-icons">
-				<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-				<li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
-				<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+				<li><a href="https://www.facebook.com/people/GESC-Arquitectos/100047534526892/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="https://api.whatsapp.com/send?phone=5215581867547&text=Hola%2C%20mucho%20gusto%2C%20deseo%20saber%20m%C3%A1s%20informaci%C3%B3n%20acerca%20de%20la%20Empresa" target="_blank"><i class="fa fa-whatsapp"></i></a></li>
 			</ul>
 		</div>	
 		<div class="bottom-footer-left wow fadeInUp" data-wow-duration="1s" data-wow-delay="450ms">

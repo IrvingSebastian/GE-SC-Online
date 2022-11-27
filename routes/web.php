@@ -30,7 +30,5 @@ Route::get('/home', [HomeController::class, 'home'])->name('home');
 Auth::routes();
 Route::resource('data', DataController::class)->middleware('auth');
 Route::resource('stadistics', StadisticController::class)->middleware('auth');
-Route::resource('personals', PersonalController::class)->middleware('auth');
 Route::resource('works', WorkController::class)->middleware('auth');
-Route::resource('comentaries', ComentaryController::class)->middleware('auth');
 Route::resource('infos', InfoController::class)->middleware('auth');

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('template_title')
-    {{ $data->name ?? 'Mostrar Data' }}
+    {{ $data->name ?? 'Mostrar' }}
 @endsection
 
 @section('content')
@@ -11,7 +11,7 @@
                 <div class="card">
                     <div class="card-header">
                         <div class="float-left">
-                            <span class="card-title">Mostrar Data</span>
+                            <span class="card-title">Mostrar</span>
                         </div>
                         <div class="float-right">
                             <a class="btn btn-primary" href="{{ route('data.index') }}"> Volver</a>
