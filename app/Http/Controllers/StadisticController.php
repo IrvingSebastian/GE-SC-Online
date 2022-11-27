@@ -48,7 +48,7 @@ class StadisticController extends Controller
         $stadistic = Stadistic::create($request->all());
 
         return redirect()->route('stadistics.index')
-            ->with('success', 'Stadistic created successfully.');
+            ->with('success', 'Registro creado satisfactoriamente');
     }
 
     /**
@@ -91,7 +91,7 @@ class StadisticController extends Controller
         $stadistic->update($request->all());
 
         return redirect()->route('stadistics.index')
-            ->with('success', 'Stadistic updated successfully');
+            ->with('success', 'Registro actualizado satisfactoriamente.');
     }
 
     /**
@@ -104,6 +104,6 @@ class StadisticController extends Controller
         $stadistic = Stadistic::find($id)->delete();
 
         return redirect()->route('stadistics.index')
-            ->with('success', 'Stadistic deleted successfully');
+            ->with('success', 'Registro borrado satisfactoriamente.');
     }
 }

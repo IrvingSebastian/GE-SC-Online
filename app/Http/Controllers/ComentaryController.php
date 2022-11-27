@@ -48,7 +48,7 @@ class ComentaryController extends Controller
         $comentary = Comentary::create($request->all());
 
         return redirect()->route('comentaries.index')
-            ->with('success', 'Comentary created successfully.');
+            ->with('success', 'Registro creado satisfactoriamente.');
     }
 
     /**
@@ -91,7 +91,7 @@ class ComentaryController extends Controller
         $comentary->update($request->all());
 
         return redirect()->route('comentaries.index')
-            ->with('success', 'Comentary updated successfully');
+            ->with('success', 'Registro actualizado satisfactoriamente');
     }
 
     /**
@@ -104,6 +104,6 @@ class ComentaryController extends Controller
         $comentary = Comentary::find($id)->delete();
 
         return redirect()->route('comentaries.index')
-            ->with('success', 'Comentary deleted successfully');
+            ->with('success', 'Registro borrado satisfactoriamente');
     }
 }

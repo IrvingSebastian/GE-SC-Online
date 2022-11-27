@@ -48,7 +48,7 @@ class DataController extends Controller
         $data = Data::create($request->all());
 
         return redirect()->route('data.index')
-            ->with('success', 'Data created successfully.');
+            ->with('success', 'Registro creado satisfactoriamente.');
     }
 
     /**
@@ -91,7 +91,7 @@ class DataController extends Controller
         $data->update($request->all());
 
         return redirect()->route('data.index')
-            ->with('success', 'Data updated successfully');
+            ->with('success', 'Registro actualizado satisfactoriamente.');
     }
 
     /**
@@ -104,6 +104,6 @@ class DataController extends Controller
         $data = Data::find($id)->delete();
 
         return redirect()->route('data.index')
-            ->with('success', 'Data deleted successfully');
+            ->with('success', 'Registro borrado satisfactoriamente');
     }
 }

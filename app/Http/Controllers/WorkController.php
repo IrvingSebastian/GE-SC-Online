@@ -48,7 +48,7 @@ class WorkController extends Controller
         $work = Work::create($request->all());
 
         return redirect()->route('works.index')
-            ->with('success', 'Work created successfully.');
+            ->with('success', 'Registro creado satisfactoriamente.');
     }
 
     /**
@@ -91,7 +91,7 @@ class WorkController extends Controller
         $work->update($request->all());
 
         return redirect()->route('works.index')
-            ->with('success', 'Work updated successfully');
+            ->with('success', 'Registro actualizado satisfactoriamente');
     }
 
     /**
@@ -104,6 +104,6 @@ class WorkController extends Controller
         $work = Work::find($id)->delete();
 
         return redirect()->route('works.index')
-            ->with('success', 'Work deleted successfully');
+            ->with('success', 'Registro borrado satisfactoriamente');
     }
 }

@@ -48,7 +48,7 @@ class InfoController extends Controller
         $info = Info::create($request->all());
 
         return redirect()->route('infos.index')
-            ->with('success', 'Info created successfully.');
+            ->with('success', 'Registro creado satisfactoriamente.');
     }
 
     /**
@@ -91,7 +91,7 @@ class InfoController extends Controller
         $info->update($request->all());
 
         return redirect()->route('infos.index')
-            ->with('success', 'Info updated successfully');
+            ->with('success', 'Registro actualizado satisfactoriamente');
     }
 
     /**
@@ -104,6 +104,6 @@ class InfoController extends Controller
         $info = Info::find($id)->delete();
 
         return redirect()->route('infos.index')
-            ->with('success', 'Info deleted successfully');
+            ->with('success', 'Registro borrado satisfactoriamente');
     }
 }

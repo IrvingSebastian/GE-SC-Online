@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Data;
+use App\Models\Stadistic;
+use App\Models\Personal;
+use App\Models\Info;
 use Illuminate\Http\Request;
 
 class ViewsController extends Controller
@@ -17,6 +20,9 @@ class ViewsController extends Controller
     public function index()
     {
         $data = Data::paginate();
-        return view('index', compact('data'));    
+        $stadistic = Stadistic::paginate();
+        $personal = Personal::paginate();
+        $info = Info::paginate();
+        return view('index', compact('data', 'stadistic', 'personal', 'info'));    
     }
 }
