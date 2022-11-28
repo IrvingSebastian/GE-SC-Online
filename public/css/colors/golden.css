@@ -3,7 +3,8 @@
 a:link, a:visited, a:hover, a:focus{text-decoration: none; color: #C0A777;}
 
 .navbar-brand {
-	background: url("../../images/logo-white8.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+	background: url("../../images/Logo_GESC.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+	background-size: auto 100%;
 }
 
 /* Home Slider */

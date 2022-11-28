@@ -22,14 +22,6 @@
 	<!-- Google Font -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
-    
-	<!-- Favicons -->
-    <link rel="shortcut icon" href="images/ico/favicon.ico">	
-    <link rel="apple-touch-icon" href="images/ico/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/ico/apple-touch-icon-72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/ico/apple-touch-icon-114.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="images/ico/apple-touch-icon-144.png">
-
 </head>
 
 <body data-spy="scroll" data-target="#mynav" data-offset="85">
@@ -94,8 +86,8 @@
 				</div>
 				<div class="item"> <!-- Change Image -->
 					<div class="caption">
-						<h1 class="animated fadeInLeftBig"><strong>Creatividad</strong> y pasión</h1>
-						<p class="animated fadeInRightBig">Proyectos novedosos</p>
+						<h1 class="animated fadeInLeftBig">Equipo multidisciplinario de <strong>profesionales</strong></h1>
+						<p class="animated fadeInRightBig">Amplia experiencia</p>
 						<a data-scroll class="learn-more animated fadeInUpBig" href="#about">Iniciar</a>
 					</div>
 				</div>
@@ -425,7 +417,8 @@
 		</div>
 		<!-- End Block Title -->
 		<div class="container">
-			<div class="wrapper-news">	
+			<div class="wrapper-news">
+					
 				<div class="row">
 					<div class="col-lg-6 col-sm-6">	
 						<div class="news-content wow fadeInLeft" data-wow-duration="1s" data-wow-delay="300ms">	
@@ -502,7 +495,7 @@
 								<div class="wrapper-contacts-icons">	
 									<div class="col-xs-4 wow fadeInRight" data-wow-duration="1s" data-wow-delay="300ms">	
 										<i class="fa fa-map-marker"></i>
-										<div class="">Tecámac Centro, Tecámac, Estado de México</div>
+										<div class="">Tecámac Centro, Estado de México, CP: 55749</div>
 									</div>								
 									<div class="col-xs-4 wow fadeInRight" data-wow-duration="1s" data-wow-delay="450ms">	
 										<i class="fa fa-mobile-phone"></i>

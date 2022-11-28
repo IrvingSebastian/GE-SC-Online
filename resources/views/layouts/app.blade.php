@@ -43,6 +43,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('infos.index') }}">Acerca de</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('index') }}" target="_blank">Abrir Página</a>
+                        </li>
                     </ul>
                     @endauth
                     
