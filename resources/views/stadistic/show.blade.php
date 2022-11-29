@@ -11,21 +11,21 @@
                 <div class="card">
                     <div class="card-header">
                         <div class="float-left">
-                            <span class="card-title">Show Stadistic</span>
+                            <span class="card-title">Mostrar</span>
                         </div>
                         <div class="float-right">
-                            <a class="btn btn-primary" href="{{ route('stadistics.index') }}"> Back</a>
+                            <a class="btn btn-primary" href="{{ route('stadistics.index') }}"> Volver</a>
                         </div>
                     </div>
 
                     <div class="card-body">
                         
                         <div class="form-group">
-                            <strong>Rank:</strong>
+                            <strong>Número:</strong>
                             {{ $stadistic->rank }}
                         </div>
                         <div class="form-group">
-                            <strong>Title:</strong>
+                            <strong>Título:</strong>
                             {{ $stadistic->title }}
                         </div>
 

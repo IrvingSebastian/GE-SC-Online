@@ -21,15 +21,15 @@
                     <div class="card-body">
                         
                         <div class="form-group">
-                            <strong>Icon:</strong>
+                            <strong>Icono:</strong>
                             {{ $data->icon }}
                         </div>
                         <div class="form-group">
-                            <strong>Title:</strong>
+                            <strong>Título:</strong>
                             {{ $data->title }}
                         </div>
                         <div class="form-group">
-                            <strong>Description:</strong>
+                            <strong>Descripción:</strong>
                             {{ $data->description }}
                         </div>
 

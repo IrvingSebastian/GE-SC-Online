@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('template_title')
-    Stadistic
+    Datos
 @endsection
 
 @section('content')
@@ -13,12 +13,12 @@
                         <div style="display: flex; justify-content: space-between; align-items: center;">
 
                             <span id="card_title">
-                                {{ __('Stadistic') }}
+                                {{ __('Datos') }}
                             </span>
 
                              <div class="float-right">
                                 <a href="{{ route('stadistics.create') }}" class="btn btn-primary btn-sm float-right"  data-placement="left">
-                                  {{ __('Create New') }}
+                                  {{ __('Crear Nuevo') }}
                                 </a>
                               </div>
                         </div>
@@ -34,10 +34,10 @@
                             <table class="table table-striped table-hover">
                                 <thead class="thead">
                                     <tr>
-                                        <th>No</th>
+                                        <th>No.</th>
                                         
-										<th>Rank</th>
-										<th>Title</th>
+										<th>Número</th>
+										<th>Título</th>
 
                                         <th></th>
                                     </tr>
@@ -52,11 +52,11 @@
 
                                             <td>
                                                 <form action="{{ route('stadistics.destroy',$stadistic->id) }}" method="POST">
-                                                    <a class="btn btn-sm btn-primary " href="{{ route('stadistics.show',$stadistic->id) }}"><i class="fa fa-fw fa-eye"></i> Show</a>
-                                                    <a class="btn btn-sm btn-success" href="{{ route('stadistics.edit',$stadistic->id) }}"><i class="fa fa-fw fa-edit"></i> Edit</a>
+                                                    <a class="btn btn-sm btn-primary " href="{{ route('stadistics.show',$stadistic->id) }}"><i class="fa fa-fw fa-eye"></i> Mostrar</a>
+                                                    <a class="btn btn-sm btn-success" href="{{ route('stadistics.edit',$stadistic->id) }}"><i class="fa fa-fw fa-edit"></i> Editar</a>
                                                     @csrf
                                                     @method('DELETE')
-                                                    <button type="submit" class="btn btn-danger btn-sm"><i class="fa fa-fw fa-trash"></i> Delete</button>
+                                                    <button type="submit" class="btn btn-danger btn-sm"><i class="fa fa-fw fa-trash"></i> Borrar</button>
                                                 </form>
                                             </td>
                                         </tr>

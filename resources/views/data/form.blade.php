@@ -2,18 +2,18 @@
     <div class="box-body">
         
         <div class="form-group">
-            {{ Form::label('icon') }}
-            {{ Form::text('icon', $data->icon, ['class' => 'form-control' . ($errors->has('icon') ? ' is-invalid' : ''), 'placeholder' => 'Icon']) }}
+            {{ Form::label('Icono') }}
+            {{ Form::text('icon', $data->icon, ['class' => 'form-control' . ($errors->has('icon') ? ' is-invalid' : ''), 'placeholder' => 'Icono']) }}
             {!! $errors->first('icon', '<div class="invalid-feedback">:message</div>') !!}
         </div>
         <div class="form-group">
-            {{ Form::label('title') }}
-            {{ Form::text('title', $data->title, ['class' => 'form-control' . ($errors->has('title') ? ' is-invalid' : ''), 'placeholder' => 'Title']) }}
+            {{ Form::label('Título') }}
+            {{ Form::text('title', $data->title, ['class' => 'form-control' . ($errors->has('title') ? ' is-invalid' : ''), 'placeholder' => 'Título']) }}
             {!! $errors->first('title', '<div class="invalid-feedback">:message</div>') !!}
         </div>
         <div class="form-group">
-            {{ Form::label('description') }}
-            {{ Form::text('description', $data->description, ['class' => 'form-control' . ($errors->has('description') ? ' is-invalid' : ''), 'placeholder' => 'Description']) }}
+            {{ Form::label('Descripción') }}
+            {{ Form::text('description', $data->description, ['class' => 'form-control' . ($errors->has('description') ? ' is-invalid' : ''), 'placeholder' => 'Descripción']) }}
             {!! $errors->first('description', '<div class="invalid-feedback">:message</div>') !!}
         </div>
 

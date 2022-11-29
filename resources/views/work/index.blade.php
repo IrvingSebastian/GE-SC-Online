@@ -49,7 +49,9 @@
                                             <td>{{ ++$i }}</td>
                                             
 											<td>{{ $work->name }}</td>
-											<td>{{ $work->photo }}</td>
+											<td>
+                                                <img src="{{ asset($work->photo) }}" width="100px" height="100px" alt="Image">
+                                            </td>
 											<td>{{ $work->year }}</td>
 
                                             <td>

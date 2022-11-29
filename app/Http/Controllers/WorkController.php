@@ -43,9 +43,22 @@ class WorkController extends Controller
      */
     public function store(Request $request)
     {
+        $work = new Work();
+
         request()->validate(Work::$rules);
 
-        $work = Work::create($request->all());
+        if($request->hasFile('photo')){
+            $file = $request->file('photo');
+            $name = time().$file->getClientOriginalName();
+            $destiny = '/images/trabajos/';
+            $upload = $file->move(public_path().$destiny, $name);
+            $work->photo = $destiny.$name;
+        }
+
+        $work->name = $request->name;
+        $work->year = $request->year;
+
+        $work->save();
 
         return redirect()->route('works.index')
             ->with('success', 'Registro creado satisfactoriamente.');

@@ -13,7 +13,7 @@
                         <div style="display: flex; justify-content: space-between; align-items: center;">
 
                             <span id="card_title">
-                                {{ __('Data') }}
+                                {{ __('¿Qué Hacemos?') }}
                             </span>
 
                              <div class="float-right">
@@ -34,11 +34,11 @@
                             <table class="table table-striped table-hover">
                                 <thead class="thead">
                                     <tr>
-                                        <th>No</th>
+                                        <th>No.</th>
                                         
-										<th>Icon</th>
-										<th>Title</th>
-										<th>Description</th>
+										<th>Icono</th>
+										<th>Título</th>
+										<th>Descripción</th>
 
                                         <th></th>
                                     </tr>
@@ -48,7 +48,9 @@
                                         <tr>
                                             <td>{{ ++$i }}</td>
                                             
-											<td>{{ $data->icon }}</td>
+											<td>
+                                                <i class='{{$data->icon}}'></i>
+                                            </td>
 											<td>{{ $data->title }}</td>
 											<td>{{ $data->description }}</td>
 

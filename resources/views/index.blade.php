@@ -5,8 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
     <meta charset="utf-8">
     <title>GE-SC Arquitectos</title>
-    <meta name="description" content="Xlight Bootstrap Responsive HTML5/CSS3 Template">
-    <meta name="author" content="Andsolutions.it">
+    <meta name="description" content="GE-SC Arquitectos">
+    <meta name="author" content="Los The Boys">
     <meta name="description" content="">
 	
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -205,16 +205,13 @@
 							@foreach ($work as $work)
 								<div class="mix {{$work->year}} portfolio" data-myorder="1">
 									<div class="img-holder">
-										<a class="folio-read-more" title="{{$work->name}}">
-											<img class="" src="{{$work->photo}}" alt="">
-											<div class="works-overlay">
-												<div class="img-overlay"></div>
-											</div>		
-											<div class="overlay-content"> 
-												<div class="works-overlay-category">{{$work->name}}</div>										
-												<div class="works-overlay-icon"><i class="fa fa-image"></i></div>										
-											</div>	
-										</a>
+										<img class="" src="{{$work->photo}}" alt="">
+										<div class="works-overlay">
+											<div class="img-overlay"></div>
+										</div>		
+										<div class="overlay-content"> 
+											<div class="works-overlay-category">{{$work->name}}</div>										
+										</div>	
 									</div>		  
 								</div>
 							@endforeach
