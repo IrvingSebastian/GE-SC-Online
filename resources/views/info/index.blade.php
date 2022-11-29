@@ -13,12 +13,12 @@
                         <div style="display: flex; justify-content: space-between; align-items: center;">
 
                             <span id="card_title">
-                                {{ __('Info') }}
+                                {{ __('Acerca De') }}
                             </span>
 
                              <div class="float-right">
                                 <a href="{{ route('infos.create') }}" class="btn btn-primary btn-sm float-right"  data-placement="left">
-                                  {{ __('Create New') }}
+                                  {{ __('Crear Nuevo') }}
                                 </a>
                               </div>
                         </div>
@@ -34,12 +34,12 @@
                             <table class="table table-striped table-hover">
                                 <thead class="thead">
                                     <tr>
-                                        <th>No</th>
+                                        <th>No.</th>
                                         
-										<th>Title</th>
-										<th>Content</th>
-										<th>Date</th>
-										<th>Photo</th>
+										<th>Título</th>
+										<th>Contenido</th>
+										<th>Fecha</th>
+										<th>Imagen</th>
 
                                         <th></th>
                                     </tr>
@@ -52,15 +52,17 @@
 											<td>{{ $info->title }}</td>
 											<td>{{ $info->content }}</td>
 											<td>{{ $info->date }}</td>
-											<td>{{ $info->photo }}</td>
+											<td>
+                                                <img src="{{asset($info->photo)}}" width="100px" height="100px">
+                                            </td>
 
                                             <td>
                                                 <form action="{{ route('infos.destroy',$info->id) }}" method="POST">
-                                                    <a class="btn btn-sm btn-primary " href="{{ route('infos.show',$info->id) }}"><i class="fa fa-fw fa-eye"></i> Show</a>
-                                                    <a class="btn btn-sm btn-success" href="{{ route('infos.edit',$info->id) }}"><i class="fa fa-fw fa-edit"></i> Edit</a>
+                                                    <a class="btn btn-sm btn-primary " href="{{ route('infos.show',$info->id) }}"><i class="fa fa-fw fa-eye"></i> Mostrar</a>
+                                                    <a class="btn btn-sm btn-success" href="{{ route('infos.edit',$info->id) }}"><i class="fa fa-fw fa-edit"></i> Editar</a>
                                                     @csrf
                                                     @method('DELETE')
-                                                    <button type="submit" class="btn btn-danger btn-sm"><i class="fa fa-fw fa-trash"></i> Delete</button>
+                                                    <button type="submit" class="btn btn-danger btn-sm"><i class="fa fa-fw fa-trash"></i> Borrar</button>
                                                 </form>
                                             </td>
                                         </tr>

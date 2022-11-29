@@ -11,30 +11,30 @@
                 <div class="card">
                     <div class="card-header">
                         <div class="float-left">
-                            <span class="card-title">Show Info</span>
+                            <span class="card-title">Mostrar</span>
                         </div>
                         <div class="float-right">
-                            <a class="btn btn-primary" href="{{ route('infos.index') }}"> Back</a>
+                            <a class="btn btn-primary" href="{{ route('infos.index') }}"> Volver</a>
                         </div>
                     </div>
 
                     <div class="card-body">
                         
                         <div class="form-group">
-                            <strong>Title:</strong>
+                            <strong>Título:</strong>
                             {{ $info->title }}
                         </div>
                         <div class="form-group">
-                            <strong>Content:</strong>
+                            <strong>Contenido:</strong>
                             {{ $info->content }}
                         </div>
                         <div class="form-group">
-                            <strong>Date:</strong>
+                            <strong>Fecha:</strong>
                             {{ $info->date }}
                         </div>
                         <div class="form-group">
-                            <strong>Photo:</strong>
-                            {{ $info->photo }}
+                            <strong>Imagen:</strong>
+                            <img src="{{ asset($info->photo)}}" width="100px" height="100px">
                         </div>
 
                     </div>

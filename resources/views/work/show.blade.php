@@ -11,25 +11,25 @@
                 <div class="card">
                     <div class="card-header">
                         <div class="float-left">
-                            <span class="card-title">Show Work</span>
+                            <span class="card-title">Mostrar</span>
                         </div>
                         <div class="float-right">
-                            <a class="btn btn-primary" href="{{ route('works.index') }}"> Back</a>
+                            <a class="btn btn-primary" href="{{ route('works.index') }}"> Volver</a>
                         </div>
                     </div>
 
                     <div class="card-body">
                         
                         <div class="form-group">
-                            <strong>Name:</strong>
+                            <strong>Nombre:</strong>
                             {{ $work->name }}
                         </div>
                         <div class="form-group">
-                            <strong>Photo:</strong>
-                            {{ $work->photo }}
+                            <strong>Imagen:</strong>
+                            <img src="{{asset($work->photo)}}" width="100px" height="100px">
                         </div>
                         <div class="form-group">
-                            <strong>Year:</strong>
+                            <strong>Categoría:</strong>
                             {{ $work->year }}
                         </div>
 
