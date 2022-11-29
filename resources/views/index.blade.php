@@ -206,7 +206,7 @@
 								<div class="mix {{$work->year}} portfolio" data-myorder="1">
 									<div class="img-holder">
 										<a class="folio-read-more" title="{{$work->name}}">
-											<img class="" src="{{$work->photo}}" alt="{{$work->name}}"> <!-- Change Image -->
+											<img class="" src="{{$work->photo}}" alt="">
 											<div class="works-overlay">
 												<div class="img-overlay"></div>
 											</div>		
