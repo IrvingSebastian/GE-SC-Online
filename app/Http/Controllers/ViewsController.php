@@ -5,7 +5,9 @@ namespace App\Http\Controllers;
 use App\Models\Data;
 use App\Models\Stadistic;
 use App\Models\Info;
+use App\Models\Work;
 use Illuminate\Http\Request;
+use Psy\Command\WhereamiCommand;
 
 class ViewsController extends Controller
 {
@@ -21,6 +23,8 @@ class ViewsController extends Controller
         $data = Data::paginate();
         $stadistic = Stadistic::paginate();
         $info = Info::paginate();
-        return view('index', compact('data', 'stadistic', 'info'));    
+        $work = Work::paginate();
+
+        return view('index', compact('data', 'stadistic', 'info', 'work'));    
     }
 }

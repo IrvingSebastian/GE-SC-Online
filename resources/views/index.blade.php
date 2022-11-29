@@ -4,7 +4,7 @@
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
     <meta charset="utf-8">
-    <title>GE-SC Online</title>
+    <title>GE-SC Arquitectos</title>
     <meta name="description" content="Xlight Bootstrap Responsive HTML5/CSS3 Template">
     <meta name="author" content="Andsolutions.it">
     <meta name="description" content="">
@@ -194,195 +194,30 @@
 				<div class="wrapper-works">
 					<div class="portfoliO">
 						<ul id="filters" class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="300ms">
-						  <li><span class="filter active" data-filter="all">All</span></li>
-						  <li><span class="filter" data-filter=".category-1">IMAGES</span></li>
-						  <li><span class="filter" data-filter=".category-2">VIDEO</span></li>
-						  <li><span class="filter" data-filter=".category-3">PROJECTS</span></li>
+						  <li><span class="filter active" data-filter="all">Todos</span></li>
+						  <li><span class="filter" data-filter=".design">Diseños</span></li>
+						  <li><span class="filter" data-filter=".execute">Proyectos Ejecutados</span></li>
+						  <li><span class="filter" data-filter=".interior">Interiores</span></li>
 						</ul>
 						<div class="portfolio-wrap">
 							<div class="myport wow fadeInDown" data-wow-duration="1s" data-wow-delay="600ms">
-								<div class="mix category-1 portfolio" data-myorder="1">
+								
+							@foreach ($work as $work)
+								<div class="mix {{$work->year}} portfolio" data-myorder="1">
 									<div class="img-holder">
-										<a class="folio-read-more" href="#" data-single_url="portfolio-single-image.html" title="This is the description">
-											<img class="" src="images/works/work1.jpg" alt="This is the title"> <!-- Change Image -->
+										<a class="folio-read-more" title="{{$work->name}}">
+											<img class="" src="{{$work->photo}}" alt="{{$work->name}}"> <!-- Change Image -->
 											<div class="works-overlay">
 												<div class="img-overlay"></div>
 											</div>		
 											<div class="overlay-content"> 
-												<div class="works-overlay-category">IMAGE</div>										
-												<div class="works-overlay-text">Single Image</div>										
+												<div class="works-overlay-category">{{$work->name}}</div>										
 												<div class="works-overlay-icon"><i class="fa fa-image"></i></div>										
 											</div>	
 										</a>
 									</div>		  
 								</div>
-								<div class="mix category-2 portfolio" data-cat="category-2" data-myorder="2">
-									<div class="img-holder">
-										<a class="folio-read-more" href="#" data-single_url="portfolio-single-image.html" title="This is the description">									
-										<img class="" src="images/works/work2.jpg" alt="This is the title"> <!-- Change Image -->
-											<div class="works-overlay">
-												<div class="img-overlay"></div>
-											</div>		
-											<div class="overlay-content"> 
-												<div class="works-overlay-category">IMAGE</div>										
-												<div class="works-overlay-text">Single Image</div>										
-												<div class="works-overlay-icon"><i class="fa fa-video-camera"></i></div>										
-											</div>	
-										</a>
-									</div>	
-								</div>
-								<div class="mix category-3 portfolio" data-cat="category-3" data-myorder="3">
-									<div class="img-holder">
-										<a class="folio-read-more" href="#" data-single_url="portfolio-single-image.html" title="This is the description">
-											<img class="" src="images/works/work3.jpg" alt="This is the title"> <!-- Change Image -->
-											<div class="works-overlay">
-												<div class="img-overlay"></div>
-											</div>		
-											<div class="overlay-content"> 
-												<div class="works-overlay-category">PROJECT</div>										
-												<div class="works-overlay-text">Single Image</div>										
-												<div class="works-overlay-icon"><i class="fa fa-graduation-cap"></i></div>										
-											</div>	
-										</a>
-									</div>		  
-								</div>
-
-								<div class="mix category-1 portfolio" data-cat="category-1" data-myorder="4">
-									<div class="img-holder">
-										<a class="folio-read-more" href="#" data-single_url="portfolio-slider.html" title="This is the description">
-											<img class="" src="images/works/work4.jpg" alt="This is the title"> <!-- Change Image -->
-											<div class="works-overlay">
-												<div class="img-overlay"></div>
-											</div>		
-											<div class="overlay-content"> 
-												<div class="works-overlay-category">IMAGE</div>										
-												<div class="works-overlay-text">Gallery</div>										
-												<div class="works-overlay-icon"><i class="fa fa-image"></i></div>										
-											</div>
-										</a>
-									</div>	  
-								</div>
-
-								<div class="mix category-2 portfolio" data-cat="category-2" data-myorder="5">
-									<div class="img-holder">
-										<a class="folio-read-more" href="#" data-single_url="portfolio-slider.html" title="This is the description">
-											<img class="" src="images/works/work5.jpg" alt="This is the title"> <!-- Change Image -->
-											<div class="works-overlay">
-												<div class="img-overlay"></div>
-											</div>		
-											<div class="overlay-content"> 
-												<div class="works-overlay-category">VIDEO</div>										
-												<div class="works-overlay-text">Gallery</div>										
-												<div class="works-overlay-icon"><i class="fa fa-video-camera"></i></div>										
-											</div>
-										</a>
-									</div>		  
-								</div>
-								<div class="mix category-3 portfolio" data-cat="category-3" data-myorder="6">
-									<div class="img-holder">
-										<a class="folio-read-more" href="#" data-single_url="portfolio-slider.html" title="This is the description">
-											<img class="" src="images/works/work6.jpg" alt="This is the title"> <!-- Change Image -->
-											<div class="works-overlay">
-												<div class="img-overlay"></div>
-											</div>		
-											<div class="overlay-content"> 
-												<div class="works-overlay-category">PROJECT</div>										
-												<div class="works-overlay-text">Gallery</div>										
-												<div class="works-overlay-icon"><i class="fa fa-graduation-cap"></i></div>										
-											</div>	
-										</a>
-									</div>			  
-								</div>
-								<div class="mix category-1 portfolio" data-cat="category-1" data-myorder="7">
-									<div class="img-holder">
-										<a class="folio-read-more" href="#" data-single_url="portfolio-video-youtube.html" title="This is the description">
-											<img class="" src="images/works/work7.jpg" alt="This is the title"> <!-- Change Image -->
-											<div class="works-overlay">
-												<div class="img-overlay"></div>
-											</div>		
-											<div class="overlay-content"> 
-												<div class="works-overlay-category">IMAGE</div>										
-												<div class="works-overlay-text">Video</div>										
-												<div class="works-overlay-icon"><i class="fa fa-image"></i></div>										
-											</div>	
-										</a>
-									</div>		  
-								</div>
-								<div class="mix category-2 portfolio" data-cat="category-2" data-myorder="8">
-									<div class="img-holder">
-										<a class="folio-read-more" href="#" data-single_url="portfolio-video-youtube.html" title="This is the description">
-											<img class="" src="images/works/work8.jpg" alt="This is the title"> <!-- Change Image -->
-											<div class="works-overlay">
-												<div class="img-overlay"></div>
-											</div>		
-											<div class="overlay-content"> 
-												<div class="works-overlay-category">Video</div>										
-												<div class="works-overlay-text">Video</div>										
-												<div class="works-overlay-icon"><i class="fa fa-video-camera"></i></div>										
-											</div>
-										</a>
-									</div>			  
-								</div>
-								<div class="mix category-3 portfolio" data-cat="category-3" data-myorder="9">
-									<div class="img-holder">
-										<a class="folio-read-more" href="#" data-single_url="portfolio-video-youtube.html" title="This is the description">
-											<img class="" src="images/works/work9.jpg" alt="This is the title"> <!-- Change Image -->
-											<div class="works-overlay">
-												<div class="img-overlay"></div>
-											</div>		
-											<div class="overlay-content"> 
-												<div class="works-overlay-category">PROJECT</div>										
-												<div class="works-overlay-text">Video</div>										
-												<div class="works-overlay-icon"><i class="fa fa-graduation-cap"></i></div>										
-											</div>	
-										</a>
-									</div>		  
-								</div>
-								<div class="mix category-1 portfolio" data-cat="category-1" data-myorder="10">
-									<div class="img-holder">
-										<a class="folio-read-more" href="#" data-single_url="portfolio-video-vimeo.html" title="This is the description">
-											<img class="" src="images/works/work10.jpg" alt="This is the title"> <!-- Change Image -->
-											<div class="works-overlay">
-												<div class="img-overlay"></div>
-											</div>		
-											<div class="overlay-content"> 
-												<div class="works-overlay-category">IMAGE</div>										
-												<div class="works-overlay-text">Video</div>										
-												<div class="works-overlay-icon"><i class="fa fa-image"></i></div>										
-											</div>
-										</a>
-									</div>			  
-								</div>
-								<div class="mix category-2 portfolio" data-cat="category-2" data-myorder="11">
-									<div class="img-holder">
-										<a class="folio-read-more" href="#" data-single_url="portfolio-video-vimeo.html" title="This is the description">
-											<img class="" src="images/works/work11.jpg" alt="This is the title"> <!-- Change Image -->
-											<div class="works-overlay">
-												<div class="img-overlay"></div>
-											</div>		
-											<div class="overlay-content"> 
-												<div class="works-overlay-category">Video</div>										
-												<div class="works-overlay-text">Video</div>										
-												<div class="works-overlay-icon"><i class="fa fa-video-camera"></i></div>										
-											</div>
-										</a>
-									</div>			  
-								</div>
-								<div class="mix category-3 portfolio" data-cat="category-3" data-myorder="12">
-									<div class="img-holder">
-										<a class="folio-read-more" href="#" data-single_url="portfolio-video-vimeo.html" title="This is the description">
-											<img class="" src="images/works/work12.jpg" alt="This is the title"> <!-- Change Image -->
-											<div class="works-overlay">
-												<div class="img-overlay"></div>
-											</div>		
-											<div class="overlay-content"> 
-												<div class="works-overlay-category">PROJECT</div>										
-												<div class="works-overlay-text">Video</div>										
-												<div class="works-overlay-icon"><i class="fa fa-graduation-cap"></i></div>										
-											</div>
-										</a>
-									</div>			  
-								</div>
+							@endforeach
 								<div class="gap"></div>
 								<div class="gap"></div>
 							</div>
@@ -409,63 +244,36 @@
 			<div class="row">	 		
 				<div class="container">
 					<div class="section-title wow fadeInDown">			
-						<h1><span>Datos e Información de la empresa</span></h1>							
+						<h1><span>Acerca de la empresa</span></h1>							
 					</div>				
-					<h1 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="300ms">Datos de interés para los visitantes</h1>
+					<h1 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="300ms">Nuestra visión y misión en el mundo</h1>
 				</div>
 			</div>
 		</div>
 		<!-- End Block Title -->
 		<div class="container">
-			<div class="wrapper-news">
-					
+			<div class="wrapper-news">	
 				<div class="row">
-					<div class="col-lg-6 col-sm-6">	
-						<div class="news-content wow fadeInLeft" data-wow-duration="1s" data-wow-delay="300ms">	
-							<div class="entry-header">	
-								<div class="blog-image">
-									<a href="blog.html"><img alt="" src="images/blog/post1.jpg" class="img-responsive"></a>
-								</div>							
-								<div class="post-date">
-									<h2>21<span>June</span></h2>
-								</div>							
-							</div>
-							<div class="entry-content">	
-								<h3 class="entry-title">
-									<a href="blog.html">Adipisicing elit, sed do eiusmod tempor</a>
-								</h3>							
-								<ul class="entry-meta">
-								<li><a href="#"><i class="fa fa-user"></i> By: Admin <span>/</span></a></li>
-								<li><a href="#"><i class="fa fa-tags"></i> Projects <span>/</span></a></li>
-								<li><a href="#"><i class="fa fa-comments"></i> 3 Comments</a></li>
-								</ul>	
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>								
+					@foreach ($info as $info)
+						<div class="col-lg-6 col-sm-6">	
+							<div class="news-content wow fadeInLeft" data-wow-duration="1s" data-wow-delay="300ms">	
+								<div class="entry-header">	
+									<div class="blog-image">
+										<img alt="" src="{{$info->photo}}" class="img-responsive">
+									</div>							
+									<div class="post-date">
+										<h2>{{$info->date}}</h2>
+									</div>							
+								</div>
+								<div class="entry-content">	
+									<h3 class="entry-title">
+										{{$info->title}}
+									</h3>							
+									<p>{{$info->content}}</p>								
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-lg-6 col-sm-6">	
-						<div class="news-content wow fadeInRight" data-wow-duration="1s" data-wow-delay="300ms">	
-							<div class="entry-header">	
-								<div class="blog-image">
-									<a href="blog.html"><img alt="" src="images/blog/post2.jpg" class="img-responsive"></a>
-								</div>							
-								<div class="post-date">
-									<h2>26<span>July</span></h2>
-								</div>							
-							</div>
-							<div class="entry-content">	
-								<h3 class="entry-title">
-									<a href="blog.html">Adipisicing elit, sed do eiusmod tempor</a>
-								</h3>							
-								<ul class="entry-meta">
-								<li><a href="#"><i class="fa fa-user"></i> By: Admin <span>/</span></a></li>
-								<li><a href="#"><i class="fa fa-tags"></i> Projects <span>/</span></a></li>
-								<li><a href="#"><i class="fa fa-comments"></i> 5 Comments</a></li>
-								</ul>	
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>								
-							</div>
-						</div>
-					</div>
+					@endforeach
 				</div>
 			</div>
 		</div>	

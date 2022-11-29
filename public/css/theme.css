@@ -1324,7 +1324,8 @@ span.price {
 }
 
 .blog-image img{
-	width: 100%;
+	width: auto;
+    height: 200px;
     -webkit-transition: all .5s ease;
     -moz-transition: all .5s ease;
     -o-transition: all .5s ease;
