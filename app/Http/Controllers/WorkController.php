@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Work;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
 
 /**
  * Class WorkController
@@ -49,8 +50,10 @@ class WorkController extends Controller
 
         if($request->hasFile('photo')){
             $file = $request->file('photo');
-            $name = time().$file->getClientOriginalName();
+            $extension = 'webp';
+            $name = time().$file->getClientOriginalName().'.'.$extension;
             $destiny = '/images/trabajos/';
+
             $upload = $file->move(public_path().$destiny, $name);
             $work->photo = $destiny.$name;
         }
@@ -101,7 +104,20 @@ class WorkController extends Controller
     {
         request()->validate(Work::$rules);
 
-        $work->update($request->all());
+        if($request->hasFile('photo')){
+            File::delete(public_path().$work->photo);
+
+            $file = $request->file('photo');
+            $name = time().$file->getClientOriginalName();
+            $destiny = '/images/trabajos/';
+            $upload = $file->move(public_path().$destiny, $name);
+            $work->photo = $destiny.$name;
+        }
+
+        $work->name = $request->name;
+        $work->year = $request->year;
+
+        $work->update();
 
         return redirect()->route('works.index')
             ->with('success', 'Registro actualizado satisfactoriamente');
@@ -114,7 +130,11 @@ class WorkController extends Controller
      */
     public function destroy($id)
     {
-        $work = Work::find($id)->delete();
+        $work = Work::find($id);
+
+        File::delete(public_path().$work->photo);
+
+        $work->delete();
 
         return redirect()->route('works.index')
             ->with('success', 'Registro borrado satisfactoriamente');
