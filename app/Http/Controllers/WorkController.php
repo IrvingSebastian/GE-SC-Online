@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\Work;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Storage;
+use Intervention\Image\ImageManagerStatic as Image;
 
 /**
  * Class WorkController
@@ -51,10 +53,12 @@ class WorkController extends Controller
         if($request->hasFile('photo')){
             $file = $request->file('photo');
             $extension = 'webp';
-            $name = time().$file->getClientOriginalName().'.'.$extension;
+            $name = time().'.'.$extension;
             $destiny = '/images/trabajos/';
+            $image = Image::make($file);
 
-            $upload = $file->move(public_path().$destiny, $name);
+            $image->save(public_path().$destiny.$name, 100, $extension);
+
             $work->photo = $destiny.$name;
         }
 
@@ -108,9 +112,13 @@ class WorkController extends Controller
             File::delete(public_path().$work->photo);
 
             $file = $request->file('photo');
-            $name = time().$file->getClientOriginalName();
+            $extension = 'webp';
+            $name = time().'.'.$extension;
             $destiny = '/images/trabajos/';
-            $upload = $file->move(public_path().$destiny, $name);
+            $image = Image::make($file);
+
+            $image->save(public_path().$destiny.$name, 100, $extension);
+
             $work->photo = $destiny.$name;
         }
 

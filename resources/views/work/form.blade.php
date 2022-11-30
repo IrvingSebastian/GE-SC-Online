@@ -13,7 +13,12 @@
         </div>
         <div class="form-group">
             {{ Form::label('Categoría') }}
-            {{ Form::text('year', $work->year, ['class' => 'form-control' . ($errors->has('year') ? ' is-invalid' : ''), 'placeholder' => 'Categoría']) }}
+            <select class="form-select" aria-label="Default select example" name="year" id="year">
+                <option selected disabled>Elige una categoría</option>
+                <option value="Diseño">Diseño</option>
+                <option value="Ejecutados">Ejecutados</option>
+                <option value="Interiores">Interiores</option>
+            </select>
             {!! $errors->first('year', '<div class="invalid-feedback">:message</div>') !!}
         </div>
 
