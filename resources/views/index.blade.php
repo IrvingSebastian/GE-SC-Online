@@ -195,9 +195,9 @@
 					<div class="portfoliO">
 						<ul id="filters" class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="300ms">
 						  <li><span class="filter active" data-filter="all">Todos</span></li>
-						  <li><span class="filter" data-filter=".design">Diseños</span></li>
-						  <li><span class="filter" data-filter=".execute">Proyectos Ejecutados</span></li>
-						  <li><span class="filter" data-filter=".interior">Interiores</span></li>
+						  <li><span class="filter" data-filter=".Diseño">Diseños</span></li>
+						  <li><span class="filter" data-filter=".Ejecutados">Proyectos Ejecutados</span></li>
+						  <li><span class="filter" data-filter=".Interiores">Interiores</span></li>
 						</ul>
 						<div class="portfolio-wrap">
 							<div class="myport wow fadeInDown" data-wow-duration="1s" data-wow-delay="600ms">
